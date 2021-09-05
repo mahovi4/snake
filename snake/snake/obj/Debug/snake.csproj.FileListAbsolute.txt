@@ -1,0 +1,7 @@
+D:\GB уроки\ООП\Мой проект\snake\snake\bin\Debug\snake.exe.config
+D:\GB уроки\ООП\Мой проект\snake\snake\bin\Debug\snake.exe
+D:\GB уроки\ООП\Мой проект\snake\snake\bin\Debug\snake.pdb
+D:\GB уроки\ООП\Мой проект\snake\snake\obj\Debug\snake.csproj.AssemblyReference.cache
+D:\GB уроки\ООП\Мой проект\snake\snake\obj\Debug\snake.csproj.CoreCompileInputs.cache
+D:\GB уроки\ООП\Мой проект\snake\snake\obj\Debug\snake.exe
+D:\GB уроки\ООП\Мой проект\snake\snake\obj\Debug\snake.pdb
