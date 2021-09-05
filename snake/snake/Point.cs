@@ -39,5 +39,11 @@ namespace snake
             else if (direction == Direction.Top) y += offset;
             else y -= offset;
         }
+
+        internal void Clear()
+        {
+            symbol = ' ';
+            Draw();
+        }
     }
 }
