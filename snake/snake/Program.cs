@@ -10,11 +10,22 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1, 3, '*');
-            p1.Draw();
+            Random random = new Random();
 
-            Point p2 = new Point(3, 5, '#');
-            p2.Draw();
+            List<char> symbols = new List<char>();
+            symbols.Add('*');
+            symbols.Add('#');
+            symbols.Add('@');
+            symbols.Add('$');
+            symbols.Add('&');
+
+            List<Point> points = new List<Point>();
+            foreach(char c in symbols)
+            {
+                Point p = new Point(random.Next(0, 10), random.Next(0, 10), c);
+                points.Add(p);
+                p.Draw();
+            }
 
             Console.ReadLine();
         }
