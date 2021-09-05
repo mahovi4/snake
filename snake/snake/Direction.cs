@@ -10,7 +10,7 @@ namespace snake
     {
         Left,
         Right,
-        Top,
+        Up,
         Down
     }
 }

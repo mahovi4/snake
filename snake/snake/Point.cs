@@ -36,8 +36,8 @@ namespace snake
         {
             if (direction == Direction.Right) x += offset;
             else if (direction == Direction.Left) x -= offset;
-            else if (direction == Direction.Top) y += offset;
-            else y -= offset;
+            else if (direction == Direction.Up) y -= offset;
+            else y += offset;
         }
 
         internal void Clear()
