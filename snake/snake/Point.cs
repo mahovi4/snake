@@ -8,9 +8,9 @@ namespace snake
 {
     class Point
     {
-        private int x;
-        private int y;
-        private char symbol;
+        public int x;
+        public int y;
+        public char symbol;
 
         public Point(int x, int y, char symbol)
         {
@@ -19,10 +19,25 @@ namespace snake
             this.symbol = symbol;
         }
 
+        public Point(Point p)
+        {
+            x = p.x;
+            y = p.y;
+            symbol = p.symbol;
+        }
+
         public void Draw()
         {
             Console.SetCursorPosition(x, y);
             Console.Write(symbol);
+        }
+
+        public void Move(int offset, Direction direction)
+        {
+            if (direction == Direction.Right) x += offset;
+            else if (direction == Direction.Left) x -= offset;
+            else if (direction == Direction.Top) y += offset;
+            else y -= offset;
         }
     }
 }
