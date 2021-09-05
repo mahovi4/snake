@@ -10,22 +10,11 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            Random random = new Random();
+            HorizontalLine hline = new HorizontalLine(3, 7, 5, '*');
+            hline.Draw();
 
-            List<char> symbols = new List<char>();
-            symbols.Add('*');
-            symbols.Add('#');
-            symbols.Add('@');
-            symbols.Add('$');
-            symbols.Add('&');
-
-            List<Point> points = new List<Point>();
-            foreach(char c in symbols)
-            {
-                Point p = new Point(random.Next(0, 10), random.Next(0, 10), c);
-                points.Add(p);
-                p.Draw();
-            }
+            VertikalLine vline = new VertikalLine(1, 1, 5, '#');
+            vline.Draw();
 
             Console.ReadLine();
         }
